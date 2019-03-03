@@ -1,0 +1,74 @@
+#pragma once
+class persona
+{
+private:
+
+	int edad;
+	int carnet;
+
+public:
+	void leer();
+	void correr();
+	 persona(int,int);	
+	~persona(void);
+};
+#pragma once
+class triangulo
+{
+private:
+
+	float base;
+	float altura;
+
+public:
+
+	triangulo(float _base, float _altura);
+	~triangulo(void);
+	float area(float base, float altura);
+
+};
+
+
+
+#include "StdAfx.h"
+#include "triangulo.h"
+#include <iostream>
+
+
+
+triangulo::triangulo(float _base, float _altura)
+{
+	base= _base;
+	altura= _altura;
+
+}
+
+
+triangulo::~triangulo(void)
+{
+}
+
+float triangulo::area(float base, float altura)
+{
+	float aux;
+	aux=(base*altura)/2;
+
+	return aux;
+
+}
+
+
+#include "iostream"
+#include "stdafx.h"
+#include "triangulo.h"
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	triangulo t1(10,5);
+	cout<<t1.area(10,5);
+	getch();
+}
+
