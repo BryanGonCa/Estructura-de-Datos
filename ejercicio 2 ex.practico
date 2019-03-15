@@ -1,0 +1,81 @@
+#pragma once
+class vector
+{
+private:
+	int v[10],n;
+public:
+	vector(void);
+	~vector(void);
+
+void cargarvector(int v[], int n);
+void mostrarvector(int v[], int n);
+void mezclarvector(int v[], int n);
+};
+
+
+
+
+#include "StdAfx.h"
+#include "vector.h"
+#include <iostream>
+
+using namespace std;
+
+
+
+
+vector::vector(void)
+{ v[10]=0;
+  n=0;
+}
+
+
+vector::~vector(void)
+{
+}
+
+void vector::cargarvector(int v[], int n){
+for(int i=0; i<n; i++){
+	cout<<"v["<<i<<"]=";
+	cin>>v[i];
+}
+
+void vector::mostrarvector(int v[], int n){
+	for(int i=0; i<n; i++){
+		cout<<vec[i]<<" , ";
+	}
+	cout<<endl;
+
+}
+
+void vector::mezclarvector(int v[], int n)
+{
+	if (v1[i]<v2[j]){
+		v3[k]=v1[i];
+		i++;
+		k++;
+	}
+}
+
+
+#include <iostream>
+#include "vector.h"
+#include "conio.h"
+#include "stdafx.h"
+
+using namespace std;
+void main()
+{
+	float v1,v2,v3,i=0,j=0,k=0,n1,n2,n3;
+	cout<<"Introduzca el tamaño del vector 1: ";
+	cin>>n1;
+	cout<<"Introduzca el tamaño del vector 2: ";
+	cin>>n2;
+	n3=n1+n2;
+	vector v9;
+	v9.cargarvector(v1[],n1);
+	v9.cargarvector(v2[].n2);
+	v9.mezclarvector(v3[],n3);
+	v9.mostrarvector(v3[],n3);
+	getch();
+}
