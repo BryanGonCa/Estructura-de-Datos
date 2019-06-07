@@ -29,7 +29,7 @@ public:
 };
 
 
-
+#include "conio.h"
 #include "StdAfx.h"
 #include "triangulo.h"
 #include <iostream>
