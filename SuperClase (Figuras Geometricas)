@@ -55,7 +55,7 @@ public:
 };
 
 //Rectangulo.cpp
-
+#include "conio.h"
 #include "StdAfx.h"
 #include "Rectangulo.h"
 
