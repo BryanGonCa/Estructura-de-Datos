@@ -19,6 +19,7 @@ public:
 	
 };
 
+#include "conio.h"
 #include "StdAfx.h"
 #include "Matriz.h"
 #include <iostream>
