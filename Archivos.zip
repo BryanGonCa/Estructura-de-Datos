@@ -1,7 +1,6 @@
-// Archivos.cpp : main project file.
+/// Archivos.cpp : main project file.
 
 #include "stdafx.h"
-
 #include "StdAfx.h"
 #include <iostream>
 #include <fstream>
