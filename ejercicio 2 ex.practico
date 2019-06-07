@@ -16,6 +16,7 @@ void mezclarvector(int v[], int n);
 
 
 #include "StdAfx.h"
+#include "conio.h"
 #include "vector.h"
 #include <iostream>
 
