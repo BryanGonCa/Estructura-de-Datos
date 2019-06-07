@@ -1,0 +1,77 @@
+//Cola.h
+
+
+#pragma once
+#define MAX 100
+class Cola
+{
+private:
+	int ini;
+	int fin;
+	int Vec[MAX];
+public:
+	Cola(void);
+	~Cola(void);
+	bool encolar(int valor);
+	bool desencolar(int &valor);
+	bool primerocola(int &valor);
+	bool colavacia();
+	bool reestructurar(int valor);
+};
+
+//Cola.cpp
+
+#include "StdAfx.h"
+#include "Cola.h"
+#include <iostream>
+
+using namespace std;
+
+
+Cola::Cola(void)
+{
+	ini = 0;
+	fin = 0;
+}
+
+
+Cola::~Cola(void)
+{
+}
+
+bool Cola::colavacia()
+{
+	bool aux=true;
+	if(ini==fin)
+		aux=true;
+	else
+		aux=false;
+	
+	return aux;
+}
+
+bool Cola::encolar(int valor)
+{
+	bool aux=true;
+	if(fin==MAX)
+	{
+		aux=false;
+		cout<<"Cola Llena."<<endl;
+	}
+	else
+	{
+		Vec[fin]=valor;
+		fin++;
+		aux=true;
+	}
+	return aux;
+}
+
+bool Cola::desencolar(int &valor)
+{
+	bool aux=true;
+
+	if(colavacia())
+		aux=false;
+	else
+	{
